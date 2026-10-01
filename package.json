@@ -1,0 +1,21 @@
+{
+  "name": "ebac-tech",
+  "version": "1.0.0",
+  "description": "",
+
+ "scripts": {
+  "dev": "parcel src/index.html",
+  "build": "parcel build src/index.html --dist-dir dist"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}

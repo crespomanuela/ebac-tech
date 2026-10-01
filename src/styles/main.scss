@@ -1,0 +1,37 @@
+@use 'variables';
+@use 'hero';
+@use 'components/infos_bar';
+@use 'components/buttons';
+@use 'event';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: variables.$textColor;
+    list-style: none;
+}
+
+body {
+    background-color: variables.$secondaryTextColor;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: variables.$tablet) {
+        max-width: 90%;
+    }
+
+    @media (max-width: variables.$mobile) {
+        max-width: 85%;
+    }
+}

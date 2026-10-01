@@ -1,0 +1,28 @@
+@use '../variables';
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    transition: filter .2s;
+
+    &--primary {
+        color: variables.$textColor;
+        background-color: variables.$purple;
+    }
+
+    &:hover {
+        filter: brightness(1.2);
+    }
+
+    @media (max-width: variables.$mobile) {
+        display: flex;
+        width: 100%;
+    }
+}
